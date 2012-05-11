@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9666B23F155D0470003275CB /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9666B23B155D0457003275CB /* libQuickDialog.a */; };
+		9682DB3E155C55A600AABB3C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB3D155C55A600AABB3C /* CFNetwork.framework */; };
+		9682DB41155C55AC00AABB3C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB40155C55AC00AABB3C /* SystemConfiguration.framework */; };
+		9682DB43155C55C000AABB3C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB42155C55C000AABB3C /* libz.dylib */; };
+		9682DB49155C560200AABB3C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB48155C560200AABB3C /* MobileCoreServices.framework */; };
+		96D9614F155ADF8E000B6F14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D9614E155ADF8E000B6F14 /* UIKit.framework */; };
+		96D96151155ADF8E000B6F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D96150155ADF8E000B6F14 /* Foundation.framework */; };
+		96D96153155ADF8E000B6F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D96152155ADF8E000B6F14 /* CoreGraphics.framework */; };
+		96D96159155ADF8E000B6F14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96D96157155ADF8E000B6F14 /* InfoPlist.strings */; };
+		96D9615B155ADF8E000B6F14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9615A155ADF8E000B6F14 /* main.m */; };
+		96D9615F155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9615E155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.m */; };
+		96D96162155ADF8E000B6F14 /* QuestionariUniwebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96161155ADF8E000B6F14 /* QuestionariUniwebViewController.m */; };
+		96D96165155ADF8E000B6F14 /* QuestionariUniwebViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D96163155ADF8E000B6F14 /* QuestionariUniwebViewController_iPhone.xib */; };
+		96D96168155ADF8E000B6F14 /* QuestionariUniwebViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D96166155ADF8E000B6F14 /* QuestionariUniwebViewController_iPad.xib */; };
+		96D9617F155AE03B000B6F14 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9617E155AE03B000B6F14 /* Reachability.m */; };
+		96D96182155AE05D000B6F14 /* ConnectionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96181155AE05D000B6F14 /* ConnectionCheck.m */; };
+		96D96185155AE071000B6F14 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96184155AE071000B6F14 /* Utility.m */; };
+		96D9618C155AE091000B6F14 /* CondizioniDomandeQuestionariData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96187155AE091000B6F14 /* CondizioniDomandeQuestionariData.m */; };
+		96D9618D155AE091000B6F14 /* DisponibilitaQuestionariData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96189155AE091000B6F14 /* DisponibilitaQuestionariData.m */; };
+		96D9618E155AE091000B6F14 /* DomandeQuestionariData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9618B155AE091000B6F14 /* DomandeQuestionariData.m */; };
+		96D96195155AE0B2000B6F14 /* CercaQuestionari.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96190155AE0B2000B6F14 /* CercaQuestionari.m */; };
+		96D96196155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96192155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.m */; };
+		96D96197155AE0B2000B6F14 /* DomandeQuestionariChiamata.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D96194155AE0B2000B6F14 /* DomandeQuestionariChiamata.m */; };
+		96D961A3155AE0C6000B6F14 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9619A155AE0C6000B6F14 /* NSObject+SBJSON.m */; };
+		96D961A4155AE0C6000B6F14 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9619C155AE0C6000B6F14 /* NSString+SBJSON.m */; };
+		96D961A5155AE0C6000B6F14 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D9619E155AE0C6000B6F14 /* SBJsonBase.m */; };
+		96D961A6155AE0C6000B6F14 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D961A0155AE0C6000B6F14 /* SBJsonParser.m */; };
+		96D961A7155AE0C6000B6F14 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D961A2155AE0C6000B6F14 /* SBJsonWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9666B238155D0457003275CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		9666B23A155D0457003275CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+		9666B23D155D046B003275CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C542392145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9666B22F155D0457003275CB /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = "escoz-QuickDialog-d5f3345/QuickDialog.xcodeproj"; sourceTree = "<group>"; };
+		9682DB3D155C55A600AABB3C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9682DB40155C55AC00AABB3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9682DB42155C55C000AABB3C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9682DB48155C560200AABB3C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		96D9614A155ADF8E000B6F14 /* QuestionariUniweb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionariUniweb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D9614E155ADF8E000B6F14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96D96150155ADF8E000B6F14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96D96152155ADF8E000B6F14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96D96156155ADF8E000B6F14 /* QuestionariUniweb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuestionariUniweb-Info.plist"; sourceTree = "<group>"; };
+		96D96158155ADF8E000B6F14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96D9615A155ADF8E000B6F14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96D9615C155ADF8E000B6F14 /* QuestionariUniweb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuestionariUniweb-Prefix.pch"; sourceTree = "<group>"; };
+		96D9615D155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionariUniwebAppDelegate.h; sourceTree = "<group>"; };
+		96D9615E155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionariUniwebAppDelegate.m; sourceTree = "<group>"; };
+		96D96160155ADF8E000B6F14 /* QuestionariUniwebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionariUniwebViewController.h; sourceTree = "<group>"; };
+		96D96161155ADF8E000B6F14 /* QuestionariUniwebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionariUniwebViewController.m; sourceTree = "<group>"; };
+		96D96164155ADF8E000B6F14 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuestionariUniwebViewController_iPhone.xib; sourceTree = "<group>"; };
+		96D96167155ADF8E000B6F14 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuestionariUniwebViewController_iPad.xib; sourceTree = "<group>"; };
+		96D9617D155AE03B000B6F14 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		96D9617E155AE03B000B6F14 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		96D96180155AE05D000B6F14 /* ConnectionCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionCheck.h; sourceTree = "<group>"; };
+		96D96181155AE05D000B6F14 /* ConnectionCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionCheck.m; sourceTree = "<group>"; };
+		96D96183155AE071000B6F14 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		96D96184155AE071000B6F14 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		96D96186155AE091000B6F14 /* CondizioniDomandeQuestionariData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CondizioniDomandeQuestionariData.h; sourceTree = "<group>"; };
+		96D96187155AE091000B6F14 /* CondizioniDomandeQuestionariData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CondizioniDomandeQuestionariData.m; sourceTree = "<group>"; };
+		96D96188155AE091000B6F14 /* DisponibilitaQuestionariData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisponibilitaQuestionariData.h; sourceTree = "<group>"; };
+		96D96189155AE091000B6F14 /* DisponibilitaQuestionariData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisponibilitaQuestionariData.m; sourceTree = "<group>"; };
+		96D9618A155AE091000B6F14 /* DomandeQuestionariData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomandeQuestionariData.h; sourceTree = "<group>"; };
+		96D9618B155AE091000B6F14 /* DomandeQuestionariData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomandeQuestionariData.m; sourceTree = "<group>"; };
+		96D9618F155AE0B2000B6F14 /* CercaQuestionari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CercaQuestionari.h; sourceTree = "<group>"; };
+		96D96190155AE0B2000B6F14 /* CercaQuestionari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CercaQuestionari.m; sourceTree = "<group>"; };
+		96D96191155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CondizioniDomandeQuestionariChiamata.h; sourceTree = "<group>"; };
+		96D96192155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CondizioniDomandeQuestionariChiamata.m; sourceTree = "<group>"; };
+		96D96193155AE0B2000B6F14 /* DomandeQuestionariChiamata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomandeQuestionariChiamata.h; sourceTree = "<group>"; };
+		96D96194155AE0B2000B6F14 /* DomandeQuestionariChiamata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomandeQuestionariChiamata.m; sourceTree = "<group>"; };
+		96D96198155AE0C6000B6F14 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		96D96199155AE0C6000B6F14 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		96D9619A155AE0C6000B6F14 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		96D9619B155AE0C6000B6F14 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		96D9619C155AE0C6000B6F14 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		96D9619D155AE0C6000B6F14 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		96D9619E155AE0C6000B6F14 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		96D9619F155AE0C6000B6F14 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		96D961A0155AE0C6000B6F14 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		96D961A1155AE0C6000B6F14 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		96D961A2155AE0C6000B6F14 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96D96147155ADF8E000B6F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9666B23F155D0470003275CB /* libQuickDialog.a in Frameworks */,
+				9682DB49155C560200AABB3C /* MobileCoreServices.framework in Frameworks */,
+				9682DB43155C55C000AABB3C /* libz.dylib in Frameworks */,
+				9682DB41155C55AC00AABB3C /* SystemConfiguration.framework in Frameworks */,
+				9682DB3E155C55A600AABB3C /* CFNetwork.framework in Frameworks */,
+				96D9614F155ADF8E000B6F14 /* UIKit.framework in Frameworks */,
+				96D96151155ADF8E000B6F14 /* Foundation.framework in Frameworks */,
+				96D96153155ADF8E000B6F14 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9666B230155D0457003275CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9666B239155D0457003275CB /* QuickDialogExample.app */,
+				9666B23B155D0457003275CB /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96D9613F155ADF8E000B6F14 = {
+			isa = PBXGroup;
+			children = (
+				9666B22F155D0457003275CB /* QuickDialog.xcodeproj */,
+				96D96154155ADF8E000B6F14 /* QuestionariUniweb */,
+				96D9614D155ADF8E000B6F14 /* Frameworks */,
+				96D9614B155ADF8E000B6F14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96D9614B155ADF8E000B6F14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96D9614A155ADF8E000B6F14 /* QuestionariUniweb.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96D9614D155ADF8E000B6F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9682DB48155C560200AABB3C /* MobileCoreServices.framework */,
+				9682DB42155C55C000AABB3C /* libz.dylib */,
+				9682DB40155C55AC00AABB3C /* SystemConfiguration.framework */,
+				9682DB3D155C55A600AABB3C /* CFNetwork.framework */,
+				96D9614E155ADF8E000B6F14 /* UIKit.framework */,
+				96D96150155ADF8E000B6F14 /* Foundation.framework */,
+				96D96152155ADF8E000B6F14 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96D96154155ADF8E000B6F14 /* QuestionariUniweb */ = {
+			isa = PBXGroup;
+			children = (
+				96D9615D155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.h */,
+				96D9615E155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.m */,
+				96D961A8155AE0E9000B6F14 /* Classes */,
+				96D9617C155AE01D000B6F14 /* Reachability */,
+				96D9617B155ADFF2000B6F14 /* Utility */,
+				96D9617A155ADFDC000B6F14 /* ResponseData */,
+				96D96179155ADFD2000B6F14 /* CallManager */,
+				96D96178155ADFBD000B6F14 /* Json */,
+				96D96155155ADF8E000B6F14 /* Supporting Files */,
+			);
+			path = QuestionariUniweb;
+			sourceTree = "<group>";
+		};
+		96D96155155ADF8E000B6F14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96D96156155ADF8E000B6F14 /* QuestionariUniweb-Info.plist */,
+				96D96157155ADF8E000B6F14 /* InfoPlist.strings */,
+				96D9615A155ADF8E000B6F14 /* main.m */,
+				96D9615C155ADF8E000B6F14 /* QuestionariUniweb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96D96178155ADFBD000B6F14 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				96D96198155AE0C6000B6F14 /* JSON.h */,
+				96D96199155AE0C6000B6F14 /* NSObject+SBJSON.h */,
+				96D9619A155AE0C6000B6F14 /* NSObject+SBJSON.m */,
+				96D9619B155AE0C6000B6F14 /* NSString+SBJSON.h */,
+				96D9619C155AE0C6000B6F14 /* NSString+SBJSON.m */,
+				96D9619D155AE0C6000B6F14 /* SBJsonBase.h */,
+				96D9619E155AE0C6000B6F14 /* SBJsonBase.m */,
+				96D9619F155AE0C6000B6F14 /* SBJsonParser.h */,
+				96D961A0155AE0C6000B6F14 /* SBJsonParser.m */,
+				96D961A1155AE0C6000B6F14 /* SBJsonWriter.h */,
+				96D961A2155AE0C6000B6F14 /* SBJsonWriter.m */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		96D96179155ADFD2000B6F14 /* CallManager */ = {
+			isa = PBXGroup;
+			children = (
+				96D9618F155AE0B2000B6F14 /* CercaQuestionari.h */,
+				96D96190155AE0B2000B6F14 /* CercaQuestionari.m */,
+				96D96191155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.h */,
+				96D96192155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.m */,
+				96D96193155AE0B2000B6F14 /* DomandeQuestionariChiamata.h */,
+				96D96194155AE0B2000B6F14 /* DomandeQuestionariChiamata.m */,
+			);
+			name = CallManager;
+			sourceTree = "<group>";
+		};
+		96D9617A155ADFDC000B6F14 /* ResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				96D96188155AE091000B6F14 /* DisponibilitaQuestionariData.h */,
+				96D96189155AE091000B6F14 /* DisponibilitaQuestionariData.m */,
+				96D96186155AE091000B6F14 /* CondizioniDomandeQuestionariData.h */,
+				96D96187155AE091000B6F14 /* CondizioniDomandeQuestionariData.m */,
+				96D9618A155AE091000B6F14 /* DomandeQuestionariData.h */,
+				96D9618B155AE091000B6F14 /* DomandeQuestionariData.m */,
+			);
+			name = ResponseData;
+			sourceTree = "<group>";
+		};
+		96D9617B155ADFF2000B6F14 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				96D96183155AE071000B6F14 /* Utility.h */,
+				96D96184155AE071000B6F14 /* Utility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		96D9617C155AE01D000B6F14 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				96D9617D155AE03B000B6F14 /* Reachability.h */,
+				96D9617E155AE03B000B6F14 /* Reachability.m */,
+				96D96180155AE05D000B6F14 /* ConnectionCheck.h */,
+				96D96181155AE05D000B6F14 /* ConnectionCheck.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		96D961A8155AE0E9000B6F14 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96D96160155ADF8E000B6F14 /* QuestionariUniwebViewController.h */,
+				96D96161155ADF8E000B6F14 /* QuestionariUniwebViewController.m */,
+				96D96163155ADF8E000B6F14 /* QuestionariUniwebViewController_iPhone.xib */,
+				96D96166155ADF8E000B6F14 /* QuestionariUniwebViewController_iPad.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96D96149155ADF8E000B6F14 /* QuestionariUniweb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D9616B155ADF8E000B6F14 /* Build configuration list for PBXNativeTarget "QuestionariUniweb" */;
+			buildPhases = (
+				96D96146155ADF8E000B6F14 /* Sources */,
+				96D96147155ADF8E000B6F14 /* Frameworks */,
+				96D96148155ADF8E000B6F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9666B23E155D046B003275CB /* PBXTargetDependency */,
+			);
+			name = QuestionariUniweb;
+			productName = QuestionariUniweb;
+			productReference = 96D9614A155ADF8E000B6F14 /* QuestionariUniweb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96D96141155ADF8E000B6F14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 96D96144155ADF8E000B6F14 /* Build configuration list for PBXProject "QuestionariUniweb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96D9613F155ADF8E000B6F14;
+			productRefGroup = 96D9614B155ADF8E000B6F14 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9666B230155D0457003275CB /* Products */;
+					ProjectRef = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				96D96149155ADF8E000B6F14 /* QuestionariUniweb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9666B239155D0457003275CB /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = 9666B238155D0457003275CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9666B23B155D0457003275CB /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = 9666B23A155D0457003275CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96D96148155ADF8E000B6F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D96159155ADF8E000B6F14 /* InfoPlist.strings in Resources */,
+				96D96165155ADF8E000B6F14 /* QuestionariUniwebViewController_iPhone.xib in Resources */,
+				96D96168155ADF8E000B6F14 /* QuestionariUniwebViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96D96146155ADF8E000B6F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D9615B155ADF8E000B6F14 /* main.m in Sources */,
+				96D9615F155ADF8E000B6F14 /* QuestionariUniwebAppDelegate.m in Sources */,
+				96D96162155ADF8E000B6F14 /* QuestionariUniwebViewController.m in Sources */,
+				96D9617F155AE03B000B6F14 /* Reachability.m in Sources */,
+				96D96182155AE05D000B6F14 /* ConnectionCheck.m in Sources */,
+				96D96185155AE071000B6F14 /* Utility.m in Sources */,
+				96D9618C155AE091000B6F14 /* CondizioniDomandeQuestionariData.m in Sources */,
+				96D9618D155AE091000B6F14 /* DisponibilitaQuestionariData.m in Sources */,
+				96D9618E155AE091000B6F14 /* DomandeQuestionariData.m in Sources */,
+				96D96195155AE0B2000B6F14 /* CercaQuestionari.m in Sources */,
+				96D96196155AE0B2000B6F14 /* CondizioniDomandeQuestionariChiamata.m in Sources */,
+				96D96197155AE0B2000B6F14 /* DomandeQuestionariChiamata.m in Sources */,
+				96D961A3155AE0C6000B6F14 /* NSObject+SBJSON.m in Sources */,
+				96D961A4155AE0C6000B6F14 /* NSString+SBJSON.m in Sources */,
+				96D961A5155AE0C6000B6F14 /* SBJsonBase.m in Sources */,
+				96D961A6155AE0C6000B6F14 /* SBJsonParser.m in Sources */,
+				96D961A7155AE0C6000B6F14 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9666B23E155D046B003275CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickDialog;
+			targetProxy = 9666B23D155D046B003275CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96D96157155ADF8E000B6F14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D96158155ADF8E000B6F14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96D96163155ADF8E000B6F14 /* QuestionariUniwebViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D96164155ADF8E000B6F14 /* en */,
+			);
+			name = QuestionariUniwebViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		96D96166155ADF8E000B6F14 /* QuestionariUniwebViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D96167155ADF8E000B6F14 /* en */,
+			);
+			name = QuestionariUniwebViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96D96169155ADF8E000B6F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96D9616A155ADF8E000B6F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96D9616C155ADF8E000B6F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuestionariUniweb/QuestionariUniweb-Prefix.pch";
+				INFOPLIST_FILE = "QuestionariUniweb/QuestionariUniweb-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96D9616D155ADF8E000B6F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuestionariUniweb/QuestionariUniweb-Prefix.pch";
+				INFOPLIST_FILE = "QuestionariUniweb/QuestionariUniweb-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96D96144155ADF8E000B6F14 /* Build configuration list for PBXProject "QuestionariUniweb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D96169155ADF8E000B6F14 /* Debug */,
+				96D9616A155ADF8E000B6F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D9616B155ADF8E000B6F14 /* Build configuration list for PBXNativeTarget "QuestionariUniweb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9616C155ADF8E000B6F14 /* Debug */,
+				96D9616D155ADF8E000B6F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96D96141155ADF8E000B6F14 /* Project object */;
+}
