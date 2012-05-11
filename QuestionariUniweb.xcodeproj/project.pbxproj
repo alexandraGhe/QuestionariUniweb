@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9666B23F155D0470003275CB /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9666B23B155D0457003275CB /* libQuickDialog.a */; };
 		9682DB3E155C55A600AABB3C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB3D155C55A600AABB3C /* CFNetwork.framework */; };
 		9682DB41155C55AC00AABB3C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB40155C55AC00AABB3C /* SystemConfiguration.framework */; };
 		9682DB43155C55C000AABB3C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9682DB42155C55C000AABB3C /* libz.dylib */; };
@@ -37,32 +36,7 @@
 		96D961A7155AE0C6000B6F14 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D961A2155AE0C6000B6F14 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9666B238155D0457003275CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
-			remoteInfo = QuickDialogExample;
-		};
-		9666B23A155D0457003275CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2C542393145ADEBD0026A152;
-			remoteInfo = QuickDialog;
-		};
-		9666B23D155D046B003275CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C542392145ADEBD0026A152;
-			remoteInfo = QuickDialog;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		9666B22F155D0457003275CB /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = "escoz-QuickDialog-d5f3345/QuickDialog.xcodeproj"; sourceTree = "<group>"; };
 		9682DB3D155C55A600AABB3C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9682DB40155C55AC00AABB3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9682DB42155C55C000AABB3C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -117,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9666B23F155D0470003275CB /* libQuickDialog.a in Frameworks */,
 				9682DB49155C560200AABB3C /* MobileCoreServices.framework in Frameworks */,
 				9682DB43155C55C000AABB3C /* libz.dylib in Frameworks */,
 				9682DB41155C55AC00AABB3C /* SystemConfiguration.framework in Frameworks */,
@@ -131,19 +104,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9666B230155D0457003275CB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9666B239155D0457003275CB /* QuickDialogExample.app */,
-				9666B23B155D0457003275CB /* libQuickDialog.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		96D9613F155ADF8E000B6F14 = {
 			isa = PBXGroup;
 			children = (
-				9666B22F155D0457003275CB /* QuickDialog.xcodeproj */,
 				96D96154155ADF8E000B6F14 /* QuestionariUniweb */,
 				96D9614D155ADF8E000B6F14 /* Frameworks */,
 				96D9614B155ADF8E000B6F14 /* Products */,
@@ -288,7 +251,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9666B23E155D046B003275CB /* PBXTargetDependency */,
 			);
 			name = QuestionariUniweb;
 			productName = QuestionariUniweb;
@@ -313,35 +275,12 @@
 			mainGroup = 96D9613F155ADF8E000B6F14;
 			productRefGroup = 96D9614B155ADF8E000B6F14 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9666B230155D0457003275CB /* Products */;
-					ProjectRef = 9666B22F155D0457003275CB /* QuickDialog.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				96D96149155ADF8E000B6F14 /* QuestionariUniweb */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9666B239155D0457003275CB /* QuickDialogExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = QuickDialogExample.app;
-			remoteRef = 9666B238155D0457003275CB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9666B23B155D0457003275CB /* libQuickDialog.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libQuickDialog.a;
-			remoteRef = 9666B23A155D0457003275CB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		96D96148155ADF8E000B6F14 /* Resources */ = {
@@ -382,14 +321,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9666B23E155D046B003275CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = QuickDialog;
-			targetProxy = 9666B23D155D046B003275CB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		96D96157155ADF8E000B6F14 /* InfoPlist.strings */ = {
