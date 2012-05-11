@@ -1,0 +1,3 @@
+[submodule "Libraries/QuickDialog"]
+	path = Libraries/QuickDialog
+	url = git://github.com/escoz/QuickDialog.git
